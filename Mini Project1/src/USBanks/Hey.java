@@ -5,7 +5,7 @@ public class Hey {
 
 
 		System.out.println("Namaste");
-
+		System.out.println("what's up?");
 		System.out.println("Hi my name is Riya");
 		System.out.println("Welcome");
 	}
