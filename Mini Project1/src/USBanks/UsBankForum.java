@@ -8,7 +8,7 @@ public static void main(String[] args) {
 	ComplaintDetailFetcher fetch= new ComplaintDetailFetcher ();
 	fetch.loadData();
 	Scanner sc=new Scanner(System.in);
-	
+	System.out.println("Hello!");
 	System.out.println("Enter your option between 1 to 7");
 	System.out.println("1.Display all the complaints based on the year provided by the user ");
 	System.out.println("2.Display all the complaints based on the name of the bank provided by the user");

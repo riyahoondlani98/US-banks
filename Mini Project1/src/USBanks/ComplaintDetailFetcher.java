@@ -5,9 +5,8 @@ import java.util.Iterator;
 import java.util.Scanner;
 
 public class ComplaintDetailFetcher {
-
+	
 UsBankFileRead bankfileR= new UsBankFileRead();
-
 Scanner sc=new Scanner(System.in);
 
 void loadData()
@@ -85,7 +84,7 @@ void complaintsClosed(String uid)
 for (HashMap.Entry<String,ComplaintDetails> entry :bankfileR.GetMapBankobjcompdet().entrySet()) 
 {
 	String compResp=entry.getValue().companyResponseToConsumer;
-	System.out.println(compResp);
+	
   if(compResp.equalsIgnoreCase("Closed") || compResp.equalsIgnoreCase("Closed with explanation"))
   {
 	  System.out.println(entry.getValue().dateReceived + " "+ entry.getValue().product+" "+entry.getValue().subProduct+" "+entry.getValue().issue+" "+entry.getValue().subIssue+" "+entry.getValue().company+" "+entry.getValue().ZIPcode+" "+entry.getValue().state+" "+entry.getValue().submittedVia+" "+entry.getValue().dateSentToCompany+" "+entry.getValue().companyResponseToConsumer+" "+entry.getValue().timelyResponse+" "+entry.getValue().consumerDisputed);
